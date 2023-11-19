@@ -1,5 +1,17 @@
 # Question-Answering system using BERT-based models and FastAPI
 
+# Table of Contents
+- [Question-Answering system using BERT-based models and FastAPI](#question-answering-system-using-bert-based-models-and-fastapi)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [API Documentation](#api-documentation)
+  - [Examples](#examples)
+    - [/answer](#answer)
+    - [/answers](#answers)
+  - [Model used](#model-used)
+    - [model explanation](#model-explanation)
+
 ## Description
 
 This is a question-answering system that uses BERT-based models and FastAPI. The system allows users to ask questions and get answers from a given text. The
@@ -11,7 +23,7 @@ To install the project, you need to clone the repository and install the depende
 to clone the repository, run the following command:
 
 ```bash 
-git clone
+git clone https://github.com/Amir-Seif-Mohamed/Question-Answering_system.git
 ```
 
 If you don't have poetry, you can install it using the following command:
@@ -50,6 +62,13 @@ Then you can interact with API though this url:  http://http://127.0.0.1:8000/do
 There are two endpoints in the API:
 1. /answer
 2. /answers
+
+| API      | Input | Output     |
+| ---------|:-----:| ----------:|
+| /answer  | Json  | string     |
+| /answers | Json  | csv file   |
+
+
 To get the answer for a single question, you can use the /answer endpoint. The endpoint takes a json object with the following format:
 ```json
 {
